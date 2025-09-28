@@ -11,7 +11,7 @@ Experience the next generation of document intelligence: Chat with multiple PDFs
 
 ## 🏗️ Architecture
 
-<img src="RAG-BOT/img/Architecture.jpg" alt="Project Flow Architecture" width="100%">
+<img src="RAGBOT/img/Architecture.jpg" alt="Project Flow Architecture" width="100%">
 
 <details>
 <summary>Show Architecture Description</summary>
