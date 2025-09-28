@@ -1,65 +1,66 @@
 
 📚 Multi-PDF Chat Agent 🤖
 
-Meet Multi-PDF Chat AI App! 🚀 Chat seamlessly with multiple PDFs using LangChain, Google Gemini, HuggingFace embeddings & FAISS Vector DB, all wrapped in a clean Streamlit UI.
+Developed by Aditya Goyal
 
-Get fast, accurate, natural answers from your documents — ask questions in plain language, and the AI finds + explains the answer from your PDFs. 🔥✨
+Chat seamlessly with multiple PDFs using LangChain, Google Gemini, HuggingFace embeddings, and FAISS Vector DB, all wrapped inside a clean Streamlit UI.
+
+Get fast, accurate, and natural answers from your documents — ask questions in plain language, and the AI finds + explains answers directly from your PDFs. 🔥✨
 
 ⸻
 
 📝 Description
 
-The Multi-PDF Chat Agent is a Streamlit-based web application that allows you to:
-	•	Upload multiple PDF documents.
-	•	Automatically extract and chunk text.
-	•	Build a searchable FAISS vector index.
-	•	Ask questions in real-time and get evidence-based answers.
+The Multi-PDF Chat Agent is a Streamlit-powered RAG (Retrieval-Augmented Generation) application that enables:
+	•	📂 Uploading multiple PDF documents
+	•	📑 Automatic text extraction + intelligent chunking
+	•	🔎 Building a FAISS vector index for fast retrieval
+	•	🤖 Real-time, evidence-based Q&A with ChatGPT-like answers
 
-Think of it as ChatGPT for your documents.
+👉 Think of it as ChatGPT for your documents.
 
 ⸻
 
-📊 Demo (Optional for Now)
+📊 Demo
 
-⚡ Soon you’ll be able to deploy this with Streamlit Cloud or Hugging Face Spaces.
+⚡ Coming soon on Streamlit Cloud and Hugging Face Spaces. Stay tuned!
 
 ⸻
 
 🎯 How It Works
-
-	1.	PDF Loading → Extracts raw text from your uploaded PDFs.
-	2.	Text Chunking → Splits into small sections so AI can handle them efficiently.
-	3.	Embeddings → Uses HuggingFace embeddings (all-MiniLM-L6-v2) to vectorize text.
-	4.	Vector DB (FAISS) → Stores embeddings for fast similarity search.
-	5.	LLM (Gemini) → Generates answers by combining retrieved evidence with generative reasoning.
+	1.	PDF Loading → Extracts raw text from uploaded PDFs
+	2.	Text Chunking → Splits into smaller sections for efficient retrieval
+	3.	Embeddings → Uses HuggingFace (all-MiniLM-L6-v2) for semantic vectorization
+	4.	Vector DB (FAISS) → Stores embeddings for lightning-fast similarity search
+	5.	LLM (Gemini) → Generates natural answers by combining evidence with reasoning
 
 ⸻
 
 🚀 Features
-	•	✅ Multi-PDF conversational QA
-	•	✅ HuggingFace embeddings (free, unlimited, no API quota issues)
-	•	✅ Google Gemini LLM (powerful, contextual answers)
-	•	✅ Natural, ChatGPT-like responses (not JSON blobs)
-	•	✅ Evidence view → See where the answer came from
-	•	✅ Streamlit UI with polished design
+	•	✅ Multi-PDF Conversational QA
+	•	✅ HuggingFace embeddings (free, unlimited, no API limits)
+	•	✅ Google Gemini LLM (contextual, powerful reasoning)
+	•	✅ Natural ChatGPT-like responses (no JSON clutter)
+	•	✅ Evidence highlighting → know where answers came from
+	•	✅ Elegant Streamlit UI with a polished design
 
 ⸻
 
 ⚙️ Requirements
-	•	streamlit – interactive web UI
+	•	streamlit – interactive web app
 	•	google-generativeai – Gemini integration
-	•	python-dotenv – load environment variables
-	•	langchain + langchain-community – RAG pipelines
+	•	python-dotenv – load .env configs securely
+	•	langchain, langchain-community – RAG pipelines
 	•	PyPDF2 – PDF text extraction
 	•	faiss-cpu – vector database
 	•	sentence-transformers – HuggingFace embeddings
-	•	langchain-google-genai – Gemini LLM wrapper
+	•	langchain-google-genai – Gemini wrapper
 
 ⸻
 
 ▶️ Installation
 
-Clone the repo:
+Clone the repository:
 
 git clone https://github.com/Adityism/Ragbot.git
 cd Ragbot
@@ -68,9 +69,9 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-Set up your .env with your Gemini API key:
+Set up environment variables (.env):
 
-GOOGLE_API_KEY=<your-api-key>
+GOOGLE_API_KEY=<your-gemini-api-key>
 
 Run the app:
 
@@ -80,22 +81,22 @@ streamlit run chatapp.py
 ⸻
 
 💡 Usage
-	1.	Upload one or more PDFs in the sidebar.
-	2.	Click Build Index to process them.
-	3.	Ask any question in plain English.
-	4.	Get answers + evidence directly from your docs.
+	1.	Upload one or more PDFs via the sidebar
+	2.	Click Build Index to process them
+	3.	Ask any question in plain English
+	4.	Get natural answers + supporting evidence instantly
 
 ⸻
 
 📁 Project Structure
 
 Ragbot/
-├── RAG-BOT/               # Core app directory
-│   ├── docs/              # Your uploaded PDFs
-│   ├── faiss_index/       # Vector DB storage
+├── RAG-BOT/               # Core app
+│   ├── docs/              # Uploaded PDFs
+│   ├── faiss_index/       # FAISS Vector DB
 │   └── chatapp.py         # Main Streamlit app
 ├── requirements.txt
-├── .env                   # Your API key
+├── .env                   # Gemini API key
 └── README.md
 
 
@@ -109,9 +110,12 @@ Distributed under the MIT License. See LICENSE for details.
 
 ⭐ Support
 
-If you like this project:
-	•	Drop a ⭐ on the repo → Adityism/Ragbot
-	•	Connect with me:
+If you find this project useful:
+	•	🌟 Star the repo → Adityism/Ragbot
+	•	🤝 Connect with me:
 	•	LinkedIn
 	•	GitHub
 
+⸻
+
+💡 Built with ❤️ by Aditya Goyal
